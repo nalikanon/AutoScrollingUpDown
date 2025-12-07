@@ -39,8 +39,7 @@ class ScrollController: ObservableObject {
                 await scrollUp()
                 await delay(seconds: scrollDelay)
                 
-                // พักก่อนลูปใหม่
-                await delay(seconds: loopDelay)
+                // ไม่มีพักเบรก เลื่อนต่อเนื่อง
             }
             
             await MainActor.run {

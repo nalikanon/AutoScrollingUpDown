@@ -110,17 +110,10 @@ struct ContentView: View {
                     }
                     .padding(.horizontal, 40)
                     
-                    VStack(spacing: 12) {
-                        HStack {
-                            Text("หน่วงเวลาระหว่างลูป:")
-                            Spacer()
-                            Text("\(Int(scrollController.loopDelay)) วินาที")
-                                .foregroundColor(.secondary)
-                        }
-                        
-                        Slider(value: $scrollController.loopDelay, in: 0.5...5.0, step: 0.5)
-                    }
-                    .padding(.horizontal, 40)
+                    Text("⚡ ไม่มีพักเบรก - เลื่อนต่อเนื่อง")
+                        .font(.caption)
+                        .foregroundColor(.blue)
+                        .padding(.horizontal, 40)
                 }
                 .padding(.top, 20)
                 
