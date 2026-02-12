@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Auto Scroll</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Auto<span class="gradient-text">Scroll</span></h1>
+      <p>Hands-free TikTok experience</p>
+    </header>
+
+    <div class="controls">
+      <div class="status-indicator" id="statusIndicator">
+        <span class="dot"></span> <span id="statusText">Stopped</span>
+      </div>
+
+      <button id="toggleBtn" class="primary-btn">
+        Start Scrolling
+      </button>
+
+      <div class="slider-container">
+        <label for="intervalSlider">Wait Time: <span id="intervalValue">5</span>s</label>
+        <input type="range" id="intervalSlider" min="1" max="60" value="5" class="styled-slider">
+      </div>
+      
+      <div class="direction-toggle">
+        <span>Direction:</span>
+        <div class="toggle-switch">
+          <input type="checkbox" id="directionCheck" checked>
+          <label for="directionCheck" class="switch-label">
+            <span class="direction-text">Down</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Use responsibly.</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
