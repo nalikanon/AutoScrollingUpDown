@@ -16,6 +16,11 @@ def auto_scroll(interval=10):
             pyautogui.press('down')
             print(f"Scrolled down. Waiting {interval} seconds...")
             time.sleep(interval)
+
+            # Press 'up' arrow key
+            pyautogui.press('up')
+            print(f"Scrolled up. Waiting {interval} seconds...")
+            time.sleep(interval)
     except KeyboardInterrupt:
         print("\nAuto-scroll stopped.")
 
